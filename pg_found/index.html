@@ -14,7 +14,7 @@
         <div class="off-canvas-wrap" data-offcanvas> 
             <div class="inner-wrap"> 
                 <div id="container"> 
-                    <header class="header" role="banner" wp-cz-section="logo" wp-cz-section-title="Logo"> 
+                    <header class="header" role="banner" wp-cz-section="logo" wp-cz-section-title="Logo" data-pg-collapsed> 
                         <div class="sticky show-for-medium-up contain-to-grid" id="desktopmenu" data-pg-collapsed> 
                             <!-- If you want to use the more traditional "fixed" navigation.
 	 simply replace "sticky" with "fixed" -->                             
@@ -146,7 +146,7 @@
                                     </li>
                                 </ul>                                 
                             </ul>                             
-                        </aside>                                                  
+                        </aside>                         
                         <aside class="right-off-canvas-menu show-for-small-only" id="offcanvasright" data-pg-collapsed> 
                             <ul class="off-canvas-list"> 
                                 <li> 
@@ -241,11 +241,25 @@
                     </header>
                     <section class="hero animated fadeIn" id="hero" data-pg-collapsed>
                         <div class="row intro">
-                            <div class="small-centered medium-uncentered medium-6 large-7 columns animated fadeInLeft">
-                                <h1>Truth? What truth?</h1>
-                                <p>Don't you want to take a leap of faith? Or become an old man, filled with regret, waiting to die alone!</p>
+                            <div class="small-centered medium-uncentered columns medium-7 large-6 small-12" data-pg-collapsed>
+                                <div class="row" data-pg-collapsed>
+                                    <div class="columns small-12" data-pg-collapsed>
+                                        <div class="animated fadeInLeft">
+                                            <h1>Truth? What truth?</h1>
+                                            <p>Don't you want to take a leap of faith? Or become an old man, filled with regret, waiting to die alone!</p>
+                                        </div>                                                                                  
+                                    </div>
+                                </div>
+                                <div class="row" data-pg-collapsed>
+                                    <div class="columns small-6 medium-6 button1 animated fadeInUp large-8">
+                                        <a href="#" class="button secondary large">Button</a> 
+                                    </div>
+                                    <div class="columns small-6 medium-6 animated fadeInUp button2 large-4">
+                                        <a href="#" class="button warning large">Button</a> 
+                                    </div>
+                                </div>
                             </div>
-                            <div class="small-centered medium-uncentered medium-6 large-5 columns ">
+                            <div class="small-centered medium-uncentered columns  medium-5 large-5 small-12" data-pg-collapsed>
                                 <div class="tech-img animated slideInRight"></div>
                             </div>
                         </div>

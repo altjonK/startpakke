@@ -59,7 +59,7 @@
                                 </li>                                 
                                 <?php pgf_off_canvas(); ?>                                 
                             </ul>                             
-                        </aside>                                                  
+                        </aside>                         
                         <aside class="right-off-canvas-menu show-for-small-only" id="offcanvasright"> 
                             <ul class="off-canvas-list"> 
                                 <li> 
@@ -79,11 +79,29 @@
                     </header>
                     <section class="hero animated fadeIn" id="hero">
                         <div class="row intro">
-                            <div class="small-centered medium-uncentered medium-6 large-7 columns animated fadeInLeft">
-                                <h1><?php _e( 'Truth? What truth?', 'pgf' ); ?></h1>
-                                <p><?php _e( 'Don\'t you want to take a leap of faith? Or become an old man, filled with regret, waiting to die alone!', 'pgf' ); ?></p>
+                            <div class="small-centered medium-uncentered columns medium-7 large-6 small-12">
+                                <div class="row">
+                                    <div class="columns small-12">
+                                        <div class="animated fadeInLeft">
+                                            <h1><?php _e( 'Truth? What truth?', 'pgf' ); ?></h1>
+                                            <p><?php _e( 'Don\'t you want to take a leap of faith? Or become an old man, filled with regret, waiting to die alone!', 'pgf' ); ?></p>
+                                        </div>                                                                                  
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="columns small-6 medium-6 button1 animated fadeInUp large-8">
+                                        <a href="#" class="button secondary large">
+                                            <?php _e( 'Button', 'pgf' ); ?>
+                                        </a>                                         
+                                    </div>
+                                    <div class="columns small-6 medium-6 animated fadeInUp button2 large-4">
+                                        <a href="#" class="button warning large">
+                                            <?php _e( 'Button', 'pgf' ); ?>
+                                        </a>                                         
+                                    </div>
+                                </div>
                             </div>
-                            <div class="small-centered medium-uncentered medium-6 large-5 columns ">
+                            <div class="small-centered medium-uncentered columns  medium-5 large-5 small-12">
                                 <div class="tech-img animated slideInRight"></div>
                             </div>
                         </div>

@@ -2,8 +2,6 @@
   background: url('../img/01.jpg') no-repeat center center;
   background-size: cover;
   height: 100vh;
-  position: relative;
-  z-index: -1;
 
   .intro {
     padding: 3rem;
@@ -27,22 +25,40 @@
     margin-bottom: 2rem;
   }
   .tech-img {
-    background: url('../img/01.jpg') no-repeat center center;
+    background: url('../img/02.jpg') no-repeat center center;
     background-size: cover;
     height: 9rem;
     width: 9rem;
     border-radius: 50%;
     display: block;
     margin: 0 auto;
-	animation-duration: 3s;
+	animation-duration: 2s;
+	-webkit-animation-duration: 2s;
   }
+  
+  .button1{
+   -webkit-animation-delay: 0.5s;
+   animation-delay: 0.5s;
+   & .button {
+   @media #{$medium-up} {float: right;}
+   } 
+  }
+  
+   .button2{
+   -webkit-animation-delay: 1s;
+   animation-delay: 1s;
+   & .button {
+   @media #{$medium-up} {float: right;}
+   } 
+  }
+  
   @media only screen and (min-width: 40.063em) {
     .tech-img {
       height: 18rem;
       width: 18rem;
     }
     h1 {
-      padding-top: 4.5rem;
+      padding-top: 2rem;
       text-align: right;
       font-size: 2.5rem;
     }

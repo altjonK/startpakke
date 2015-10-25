@@ -87,11 +87,12 @@ NAVIGATION STYLES
 #desktopmenu.sticky, #menudropdown.sticky {
 		position: absolute;
 		z-index: 99;
-		top: 2rem;
+		padding-top: 2rem;
 		left: 0;
 		right: 0;
+		transition: all 1s;
 		@media #{$small-only} {
-			top:0; 
+			padding-top:0; 
 			& .top-bar {
 
 			}
@@ -100,29 +101,21 @@ NAVIGATION STYLES
 
 #desktopmenu.sticky.fixed, #menudropdown.sticky.fixed {
 		position: fixed;
-		top:0;
+		padding-top:0;
 		left:0;	
+		transition: all 1s;
 		@media #{$small-only}{
 
 		}
 }
  
-.top-bar {
-	.title-area {
-		z-index: 1;
-	}
-} 
-
-.sticky.fixed {
-	-webkit-animation: fadeInDownBig 1s;
-	animation: fadeInDownBig 1s;
-	
-	.top-bar-section{
-		ul>.divider{
-		border-right: 1px solid;
-		}
+.f-topbar-fixed {
+	padding-top: 0 !important; 
+	.sticky {
+		background: #333;
 	}
 }
+
 
 .top-bar.expanded {
 	background: #222;
@@ -145,14 +138,28 @@ NAVIGATION STYLES
 		background: transparent none;
 	}
 	ul>.divider{
-	border-right: 0 none;
+	border-right: 1px solid transparent;
+	transition: all 1s;
 	}
 }
 
-.f-topbar-fixed {
-	padding-top: 0 !important; 
-	.sticky {
-		background: #333;
+.top-bar {
+	.title-area {
+		z-index: 1;
+	}
+} 
+
+.sticky.fixed {
+	/*
+	-webkit-animation: fadeInDownBig 1s;
+	animation: fadeInDownBig 1s;
+	*/
+	
+	.top-bar-section{
+		ul>.divider{
+		border-right: 1px solid;
+		transition: all 1s;
+		}
 	}
 }
 
