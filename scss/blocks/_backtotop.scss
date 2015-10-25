@@ -1,0 +1,41 @@
+/* back to top */
+#backtotop {
+    position: fixed;
+    right: 1rem;
+    bottom: 1rem;
+    z-index: 99;
+    cursor: pointer;
+    display: none;
+    font-size: 1.2rem;
+    width: 1.5rem;
+    height: 1.5rem;
+    line-height: 1.5rem;
+    text-align: center;
+    border-radius: 10%;
+    opacity: 0.5;
+    background-color: #888888;
+    color: #ffffff;
+}
+
+#backtotop {
+  background-color: #888888;
+  color: #ffffff;
+}
+
+#backtotop:hover, #backtotop:focus {
+  background-color: #444444;
+} 
+
+@media only screen and (max-width: 40em) {
+  #backtotop {
+    bottom: 1rem;
+    font-size: 0.5625rem;
+    color: black;
+    opacity: 0.4;
+  }
+  #backtotop:hover {
+    color: black;
+    opacity: 1;
+  }
+  
+  }

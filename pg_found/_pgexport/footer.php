@@ -24,15 +24,12 @@
                                                 ) );
                                                 }
                                                  ?>                                             
-
                                             <h6 class="prosjekt-tittel"><?php the_title(); ?></h6> 
                                         </a>                                         
-
                                         <p class="prosjekt-kategori"><?php foreach((get_the_category()) as $category) {     echo $category->cat_name . ' '; } ?></p> 
                                         <div class="reveal-modal" data-reveal="" aria-labelledby="modalTitle" aria-hidden="true" role="dialog" id="prosjekt-<?php the_ID(); ?>"> 
                                             <h2 id="modalTitle" class="modalTitle"><?php the_title(); ?></h2> 
                                             <?php the_content(); ?>                                             
-
                                             <a class="close-reveal-modal" aria-label="Close">
                                                 <?php _e( '×', 'pgf' ); ?>
                                             </a>                                             
@@ -44,7 +41,6 @@
                         <?php else : ?>
                             <p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
                         <?php endif; ?>                         
-
                         <!-- .large-12 -->
                     </section>                     
                     <section class="spotlight1" id="spotlight"> 
@@ -68,7 +64,7 @@
                                                 <?php 
                                                     if ( has_post_thumbnail() ) {
                                                         the_post_thumbnail( 'medium', array(
-                                                        'class' => 'service-icon wp-post-image wp-post-image'
+                                                        'class' => 'service-icon wp-post-image wp-post-image wp-post-image'
                                                     ) );
                                                     }
                                                      ?>                                                 
@@ -113,7 +109,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="row">
+                    <div class="row wow fadeInRight">
                         <div class="small-9 columns small-centered">
                             <article class="event">
                                 <div class="event-date">

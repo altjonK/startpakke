@@ -1,0 +1,43 @@
+/*********************
+FEATURED
+*********************/
+.features {
+	text-align: center;
+	hr {
+		width: 25%;
+		margin: 1rem auto;
+	}
+	.round-icon {
+	  background-color: #E87E04;
+	  @include transition(all 1s linear);
+	  border-radius: 50%;
+	  display: table;
+	  height: 100px;
+	  margin: 1rem auto 1rem;
+	  width: 100px;
+	  font-size: 3rem;
+		span {
+		color: #fff;
+		@include transition(all 1s linear);
+		display: table-cell;
+		text-align: center;
+		vertical-align: middle;
+		}
+	}
+	.columns:hover {
+		.round-icon {
+		  background-color: #000;
+		  @include transition(all 1s linear);
+			span {
+			color: red;
+			@include transition(all 1s linear);
+			}
+		}
+		}
+		
+	@media only screen and (max-width: 40em) {
+		.columns {
+			margin-bottom: 5rem;
+		}
+	}
+}

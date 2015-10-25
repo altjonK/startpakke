@@ -2,7 +2,7 @@
 <html class="no-js" <?php language_attributes(); ?>> 
     <head> 
         <meta charset="<?php bloginfo( 'charset' ); ?>" /> 
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />                            
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />                   
         <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
         <?php wp_head(); ?>
     </head>     
@@ -49,7 +49,7 @@
                                     <a href="#" class="right-off-canvas-toggle menu-icon"><span></span></a> 
                                 </section>                                 
                             </nav>                             
-                        </div>                         
+                        </div>
                         <aside class="left-off-canvas-menu show-for-small-only" id="offcanvasleft"> 
                             <ul class="off-canvas-list"> 
                                 <li> 
@@ -59,7 +59,7 @@
                                 </li>                                 
                                 <?php pgf_off_canvas(); ?>                                 
                             </ul>                             
-                        </aside>                         
+                        </aside>                                                  
                         <aside class="right-off-canvas-menu show-for-small-only" id="offcanvasright"> 
                             <ul class="off-canvas-list"> 
                                 <li> 
@@ -75,28 +75,17 @@
                             </ul>                             
                         </aside>                         
                         <a class="exit-off-canvas" id="closeleft"></a> 
-                        <a class="exit-off-canvas" id="closeright"></a>
-                        <div class="sticky contain-to-grid" id="menudropdown"> 
-                            <nav class="top-bar" data-topbar> 
-                                <ul class="title-area"> 
-                                    <!-- Title Area -->                                     
-                                    <li class="name"> 
-                                        <h1> <a href="<?php echo esc_url( home_url() ); ?>" rel="nofollow"> 
-                                                <?php echo wp_get_attachment_image( get_theme_mod( 'logobilde' ), 'medium', null, array(
-                                                        'class' => 'logo'
-                                                    ) ) ?>                                                 
-                                            </a></h1> 
-                                    </li>                                     
-                                    <li class="toggle-topbar menu-icon"> 
-                                        <a href="#"><span><?php _e( 'Meny', 'pgf' ); ?></span></a> 
-                                    </li>                                     
-                                </ul>
-                                <section class="top-bar-section">
-                                    <?php pgf_top_nav(); ?>
-                                </section>                                                                  
-                            </nav>
-                        </div>                         
+                        <a class="exit-off-canvas" id="closeright"></a> 
                     </header>
-                    <div id="hero" tyle="background-image:url('http://localhost/nordic/wp-content/uploads/2015/09/s01.jpg')" class="heroholder"> 
-</div>
+                    <section class="hero animated fadeIn" id="hero">
+                        <div class="row intro">
+                            <div class="small-centered medium-uncentered medium-6 large-7 columns animated fadeInLeft">
+                                <h1><?php _e( 'Truth? What truth?', 'pgf' ); ?></h1>
+                                <p><?php _e( 'Don\'t you want to take a leap of faith? Or become an old man, filled with regret, waiting to die alone!', 'pgf' ); ?></p>
+                            </div>
+                            <div class="small-centered medium-uncentered medium-6 large-5 columns ">
+                                <div class="tech-img animated slideInRight"></div>
+                            </div>
+                        </div>
+                    </section>
                     <div id="content" class="contentbox">

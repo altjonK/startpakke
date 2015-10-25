@@ -23,7 +23,7 @@ CSS file.
 @import "../bower_components/foundation/scss/foundation";
 
 // Import animate.scss from SCSS
-@import "../bower_components/animatewithsass/animate";
+@import "blocks/animate";
 
 // Make gallery use Foundation block grid
 @import "gallery";
@@ -37,3 +37,12 @@ CSS file.
 // Import your print styles
 @import "print";
 
+
+// Blocks import
+@import "blocks/hero";
+@import "blocks/events";
+@import "blocks/hoverimage";
+@import "blocks/services";
+@import "blocks/featured";
+@import "blocks/testimonials";
+@import "blocks/backtotop";
