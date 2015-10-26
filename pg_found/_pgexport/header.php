@@ -2,7 +2,7 @@
 <html class="no-js" <?php language_attributes(); ?>> 
     <head> 
         <meta charset="<?php bloginfo( 'charset' ); ?>" /> 
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />                   
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />                                                       
         <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
         <?php wp_head(); ?>
     </head>     
@@ -45,11 +45,11 @@
                                 <section class="left-small"> 
                                     <a href="#" class="left-off-canvas-toggle menu-icon"><span></span></a> 
                                 </section>                                 
-                                <section class="right-small">
+                                <section class="right-small"> 
                                     <a href="#" class="right-off-canvas-toggle menu-icon"><span></span></a> 
                                 </section>                                 
                             </nav>                             
-                        </div>
+                        </div>                         
                         <aside class="left-off-canvas-menu show-for-small-only" id="offcanvasleft"> 
                             <ul class="off-canvas-list"> 
                                 <li> 
@@ -75,35 +75,35 @@
                             </ul>                             
                         </aside>                         
                         <a class="exit-off-canvas" id="closeleft"></a> 
-                        <a class="exit-off-canvas" id="closeright"></a> 
-                    </header>
-                    <section class="hero animated fadeIn" id="hero">
-                        <div class="row intro">
-                            <div class="small-centered medium-uncentered columns medium-7 large-6 small-12">
-                                <div class="row">
-                                    <div class="columns small-12">
-                                        <div class="animated fadeInLeft">
-                                            <h1><?php _e( 'Truth? What truth?', 'pgf' ); ?></h1>
-                                            <p><?php _e( 'Don\'t you want to take a leap of faith? Or become an old man, filled with regret, waiting to die alone!', 'pgf' ); ?></p>
-                                        </div>                                                                                  
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="columns small-6 medium-6 button1 animated fadeInUp large-8">
+                        <a class="exit-off-canvas" id="closeright"></a>                          
+                    </header>                     
+                    <section class="hero animated fadeIn" id="hero"> 
+                        <div class="row intro"> 
+                            <div class="small-centered medium-uncentered columns medium-7 large-6 small-12"> 
+                                <div class="row"> 
+                                    <div class="columns small-12"> 
+                                        <div class="animated fadeInLeft"> 
+                                            <h1><?php _e( 'Truth? What truth?', 'pgf' ); ?></h1> 
+                                            <p><?php _e( 'Don\'t you want to take a leap of faith? Or become an old man, filled with regret, waiting to die alone!', 'pgf' ); ?></p> 
+                                        </div>                                         
+                                    </div>                                     
+                                </div>                                 
+                                <div class="row"> 
+                                    <div class="columns small-6 medium-6 button1 animated fadeInUp large-8"> 
                                         <a href="#" class="button secondary large">
                                             <?php _e( 'Button', 'pgf' ); ?>
                                         </a>                                         
-                                    </div>
-                                    <div class="columns small-6 medium-6 animated fadeInUp button2 large-4">
+                                    </div>                                     
+                                    <div class="columns small-6 medium-6 animated fadeInUp button2 large-4"> 
                                         <a href="#" class="button warning large">
                                             <?php _e( 'Button', 'pgf' ); ?>
                                         </a>                                         
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="small-centered medium-uncentered columns  medium-5 large-5 small-12">
-                                <div class="tech-img animated slideInRight"></div>
-                            </div>
-                        </div>
-                    </section>
+                                    </div>                                     
+                                </div>                                 
+                            </div>                             
+                            <div class="small-centered medium-uncentered columns  medium-5 large-5 small-12"> 
+                                <div class="tech-img animated slideInRight"></div>                                 
+                            </div>                             
+                        </div>                         
+                    </section>                     
                     <div id="content" class="contentbox">

@@ -90,12 +90,25 @@ NAVIGATION STYLES
 		padding-top: 2rem;
 		left: 0;
 		right: 0;
-		transition: all 1s;
+		transition: all 1s; 
+		-webkit-transition: all 1s;
 		@media #{$small-only} {
 			padding-top:0; 
 			& .top-bar {
 
 			}
+		}
+		nav ul.title-area li img.logo {			
+			max-width: 250px;
+			height: auto;	
+			transition: all 1s; 
+			-webkit-transition: all 1s;
+			@media #{$small-only} {
+			max-width: 120px;
+			height: auto;	
+			transition: all 1s; 
+			-webkit-transition: all 1s;
+		}
 		}
 }
 
@@ -103,10 +116,19 @@ NAVIGATION STYLES
 		position: fixed;
 		padding-top:0;
 		left:0;	
-		transition: all 1s;
-		@media #{$small-only}{
-
+		transition: all 1s; 
+		-webkit-transition: all 1s;
+		nav ul.title-area li img.logo {			
+			max-width: 120px;
+			height: auto;	
+			transition: all 1s; 
+			-webkit-transition: all 1s;
 		}
+}
+
+#mobilemenu .tab-bar img.logo {
+			max-width: 120px;
+			height: auto;	
 }
  
 .f-topbar-fixed {
@@ -128,6 +150,7 @@ NAVIGATION STYLES
 }
 
 .top-bar-section{
+	padding-top: 0.7rem;
 	ul li ul li
 	{
 		background: #333;
@@ -139,7 +162,16 @@ NAVIGATION STYLES
 	}
 	ul>.divider{
 	border-right: 1px solid transparent;
-	transition: all 1s;
+	transition: all 1s; 
+	-webkit-transition: all 1s;
+	}
+}
+
+#desktopmenu.sticky.fixed, #menudropdown.sticky.fixed {
+	.top-bar-section{
+		padding-top: 0rem;
+		transition: all 1s; 
+		-webkit-transition: all 1s;
 	}
 }
 
@@ -158,7 +190,8 @@ NAVIGATION STYLES
 	.top-bar-section{
 		ul>.divider{
 		border-right: 1px solid;
-		transition: all 1s;
+		transition: all 1s; 
+		-webkit-transition: all 1s;
 		}
 	}
 }
